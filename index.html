@@ -128,17 +128,20 @@
 
     /* Middle Panel */
     .middle-panel {
-      flex: 0;
+      flex: 1.1;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: #fff;
+      overflow: hidden;
     }
 
     .middle-panel video {
       max-width: 100%;
       max-height: 100%;
       border: 1px solid #ccc;
+      object-fit: cover; /* Makes the video cover the container */
+      border: none; /* Removes the border */
     }
 
     /* Right Panel */
@@ -242,7 +245,7 @@
 
     <!-- Middle Panel -->
     <div class="middle-panel">
-        <video autoplay loop muted playsinline style="max-width: 100%; height: auto;">
+        <video autoplay loop muted playsinline style="max-width: 100%; height: 100%;">
   <source src="https://raw.githubusercontent.com/BDavis39/BDavis39.github.io/main/videos/3909741-hd_1080_1920_30fps.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
