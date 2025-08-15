@@ -169,20 +169,20 @@
         let buttonsHTML = '';
 
         if (project.links.length > 1) {
-          buttonsHTML = `
-            <div class="button-group">
-              ${project.links.map(link => `
-                <a href="${link.url}" class="code-btn" target="_blank">${link.label}</a>
-              `).join('')}
-            </div>
-          `;
-        } else {
-          buttonsHTML = `
-            <div class="button-group">
-              <a href="${project.links[0].url}" class="code-btn" target="_blank">${project.links[0].label}</a>
-            </div>
-          `;
-        }
+            buttonsHTML = `
+              <div class="button-group">
+                ${project.links.map(link => `
+                  <a href="${link.url || link.href}" class="code-btn" target="_blank">${link.label}</a>
+                `).join('')}
+              </div>
+            `;
+          } else {
+            buttonsHTML = `
+              <div class="button-group">
+                <a href="${project.links[0].url || project.links[0].href}" class="code-btn" target="_blank">${project.links[0].label}</a>
+              </div>
+            `;
+          }
 
         card.innerHTML = `
           <div class="content-wrapper" style="flex-grow: 1; display: flex; flex-direction: column;">
