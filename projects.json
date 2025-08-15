@@ -14,7 +14,7 @@
   {
     "title": "Is Soil Moisture Increasing at High Latitudes with Increasing Temperature and Precipitation",
     "description": "A look into how soil moisture trends have changed over the last 30-40 years using satellite observations.",
-    "image": "images/dashboard.png",
+    "image": "images/seasonal_decompose.png",
     "codeLink": "https://github.com/BDavis39/code/blob/main/sm_trend_analysis.ipynb"
   }
 ]
