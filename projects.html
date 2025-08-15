@@ -103,7 +103,7 @@
   </nav>
 
   <!-- PROJECTS GRID -->
-  <div class="projects-grid">
+  <div class="projects-grid" id="projectsContainer">
     
     <!-- Project 1 -->
     <div class="project-card">
@@ -146,6 +146,36 @@
     </div>
 
   </div>
+
+  <script>
+  async function loadProjects() {
+    try {
+      const response = await fetch('projects.json');
+      const projects = await response.json();
+
+      const container = document.getElementById('projectsContainer');
+
+      projects.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.innerHTML = `
+          <div class="project-header">
+            <h2>${project.title}</h2>
+            <p>${project.description}</p>
+          </div>
+          <img src="${project.image}" alt="Screenshot of ${project.title}" class="project-image">
+          <a href="${project.codeLink}" class="code-btn" target="_blank">Code</a>
+        `;
+        container.appendChild(card);
+      });
+    } catch (err) {
+      console.error('Failed to load projects:', err);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', loadProjects);
+</script>
+
 
 </body>
 </html>
