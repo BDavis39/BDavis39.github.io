@@ -154,6 +154,8 @@
       const projects = await response.json();
 
       const container = document.getElementById('projectsContainer');
+      
+      container.innerHTML = ''; // Clear existing hardcoded cards
 
       projects.forEach(project => {
         const card = document.createElement('div');
