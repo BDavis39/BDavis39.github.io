@@ -2,7 +2,7 @@
   {
     "title": "The Sensitivity of Boundary Layer Characteristics to Entrainment-Enhanced Buoyant Mixing and Surface Evaporative Fraction (CURRENT)",
     "description": "A web app for visualizing multi-model climate data.",
-    "image": "images/climate.png",
+    "image": "images/ratio_schematic.png",
     "codeLink": "https://github.com/yourusername/climate-viewer"
   },
   {
