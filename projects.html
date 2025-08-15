@@ -85,8 +85,13 @@
       object-fit: contain;
       display: block;
     }
+    .button-group {
+      display: flex;
+      flex-direction: row;
+    }
+    
     .code-btn {
-      background-color: #374151; /* Blue from homepage */
+      background-color: #374151;
       color: white;
       padding: 12px;
       text-align: center;
@@ -95,9 +100,16 @@
       font-weight: 500;
       text-decoration: none;
       transition: background-color 0.2s;
+      flex: 1; /* Each button takes equal space */
+      border-right: 1px solid #fff; /* Visual divider */
     }
+    
+    .code-btn:last-child {
+      border-right: none; /* No divider after the last button */
+    }
+    
     .code-btn:hover {
-      background-color: #1F2937; /* Slightly darker blue */
+      background-color: #1F2937;
     }
   </style>
 </head>
