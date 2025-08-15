@@ -3,28 +3,48 @@
     "title": "The Sensitivity of Boundary Layer Characteristics to Entrainment-Enhanced Buoyant Mixing and Surface Evaporative Fraction (CURRENT)",
     "description": "A web app for visualizing multi-model climate data.",
     "image": "images/ratio_schematic.png",
-    "codeLink": "https://github.com/yourusername/climate-viewer",
-    "buttonText": "More Info."
+    "links": [
+        {
+        "label": "More Info.",
+        "url": "https://github.com/your-repo"
+        },
+       ]
   },
   {
     "title": "Quantifying the Prediction Skill of the Half-Century Reforecast Project (Huang et al. 2017)",
     "description": "Reforecast data is compared with observation data in metrics including: Mean Bias (MB), Anomaly Correlation Coefficient (ACC), and Brier Skill Score (BSS).",
     "image": "images/BSS_mn7_5.0.png",
-    "codeLink": "https://github.com/BDavis39/code/blob/main/pred_skill_analysis.ipynb",
-    "buttonText": "Code"
+    "links": [
+         {
+        "label": "Code",
+        "url": "https://github.com/BDavis39/code/blob/main/pred_skill_analysis.ipynb"
+         },
+        ]
   },
   {
     "title": "Principal Components of December Mean Sea Surface Temperature (SST)",
     "description": "Data from Decmber 1983 is used to plt the spatial structure and time series of the leading components of the EOF.",
     "image": "images/EOF1.png",
-    "codeLink": "https://github.com/BDavis39/code/blob/main/pred_skill_analysis.ipynb",
-    "buttonText": "Code"
+    "links": [
+         {
+        "label": "Main",
+        "url": "https://github.com/BDavis39/code/blob/main/pred_skill_analysis.ipynb"
+         },
+         {
+         "label": "PCA Function"
+         "url":
+         },
+       ]
   },
   {
     "title": "Is Soil Moisture Increasing at High Latitudes with Increasing Temperature and Precipitation",
     "description": "A look into how soil moisture trends have changed over the last 30-40 years using satellite observations.",
     "image": "images/seasonal_decompose.png",
-    "codeLink": "https://github.com/BDavis39/code/blob/main/sm_trend_analysis.ipynb",
-    "buttonText": "Code"
-  }
+    "links": [
+          {
+            "label": "Code",
+            "url": "https://github.com/BDavis39/code/blob/main/sm_trend_analysis.ipynb"
+          },
+        ] 
+  }  
 ]
