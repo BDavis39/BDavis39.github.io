@@ -31,3 +31,145 @@
       margin: 0 15px;
       font-size: 20px;
       text-decoration: none;
+      color: #606060;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #000;
+    }
+
+    /* ===== PAGE HEADER ===== */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 3.5em;
+      font-family: 'Playwrite DE Grund', serif;
+      font-weight: 400;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-family: 'League Spartan', sans-serif;
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* ===== PROJECTS GRID ===== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 40px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .project-card {
+      background-color: #f5f6f7;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+    .project-header {
+      padding: 20px;
+      text-align: center;
+    }
+    .project-header h2 {
+      font-family: 'League Spartan', sans-serif;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    .project-header p {
+      font-size: 1em;
+      color: #606060;
+      line-height: 1.5;
+    }
+    .project-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    .code-btn {
+      background-color: #6E7C85;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-family: 'League Spartan', sans-serif;
+      font-size: 1em;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .code-btn:hover {
+      background-color: #5a656c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION (copied from homepage) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Research & Projects</a>
+    <a href="https://github.com/BDavis39?tab=repositories" target="_blank">GitHub</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header>
+    <h1>Research & Projects</h1>
+    <p>Here are some of the projects I’ve worked on, from scientific research to coding applications.</p>
+  </header>
+
+  <!-- PROJECTS GRID -->
+  <div class="projects-grid">
+    
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Dummy Project 1</h2>
+        <p>A brief description about what this project does and why it’s interesting.</p>
+      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Project Image" class="project-image">
+      <a href="#" class="code-btn">Code</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Dummy Project 2</h2>
+        <p>A brief description about what this project does and why it’s interesting.</p>
+      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Project Image" class="project-image">
+      <a href="#" class="code-btn">Code</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Dummy Project 3</h2>
+        <p>A brief description about what this project does and why it’s interesting.</p>
+      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Project Image" class="project-image">
+      <a href="#" class="code-btn">Code</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h2>Dummy Project 4</h2>
+        <p>A brief description about what this project does and why it’s interesting.</p>
+      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Project Image" class="project-image">
+      <a href="#" class="code-btn">Code</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
