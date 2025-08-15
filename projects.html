@@ -141,16 +141,33 @@
       projects.forEach(project => {
         const card = document.createElement('div');
         card.className = 'project-card';
+        let buttonsHTML = '';
+
+        if (project.links.length > 1) {
+          buttonsHTML = `
+            <div class="button-group">
+              ${project.links.map(link => `
+                <a href="${link.url}" class="code-btn" target="_blank">${link.label}</a>
+              `).join('')}
+            </div>
+          `;
+        } else {
+          buttonsHTML = `
+            <a href="${project.links[0].url}" class="code-btn" target="_blank">${project.links[0].label}</a>
+          `;
+        }
+        
         card.innerHTML = `
           <div class="project-header">
             <h2>${project.title}</h2>
             <p>${project.description}</p>
           </div>
           <div class="image-wrapper">
-              <img src="${project.image}" alt="Screenshot of ${project.title}" class="project-image">
+            <img src="${project.image}" alt="Screenshot of ${project.title}" class="project-image">
           </div>
-          <a href="${project.codeLink}" class="code-btn" target="_blank">${project.buttonText || 'Code'}</a>
+          ${buttonsHTML}
         `;
+
         container.appendChild(card);
       });
     } catch (err) {
