@@ -8,7 +8,7 @@
   {
     "title": "Quantifying the Prediction Skill of the Half-Century Reforecast Project (Huang et al. 2017)",
     "description": "Reforecast data is compared with observation data in metrics including: Mean Bias (MB), Anomaly Correlation Coefficient (ACC), and Brier Skill Score (BSS).",
-    "image": "images/dashboard.png",
+    "image": "images/BSS_mn7_5.0.png",
     "codeLink": "https://github.com/BDavis39/code/blob/main/pred_skill_analysis.ipynb"
   },
   {
