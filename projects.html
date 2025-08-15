@@ -137,7 +137,7 @@
           <div class="image-wrapper">
               <img src="${project.image}" alt="Screenshot of ${project.title}" class="project-image">
           </div>
-          <a href="${project.codeLink}" class="code-btn" target="_blank">Code</a>
+          <a href="${project.codeLink}" class="code-btn" target="_blank">${project.buttonText || 'Code'}</a>
         `;
         container.appendChild(card);
       });
